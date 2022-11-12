@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_admin_login.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_bmi.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_creatingprofile.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_customers_list.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_exercise.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_exercise__area.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_exercisedetails.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_login.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_payment.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_profile.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_reg_choice.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_reg_exercise.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_reg_gender.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_register.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_selected_user.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_splashscreen.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_user_exercise.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_user_exercise__details.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_userdashboard.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/add_exercise_dialog.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/edit_exercise_bottomsheet_layout.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/exercise_list_layout.xml" value="0.19166666666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

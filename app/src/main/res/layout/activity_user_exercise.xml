@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_list_bg"
+    android:orientation="vertical"
+    tools:context=".UserExercise">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="dashboard"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+
+        <TextView
+            android:id="@+id/txtdashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Exercises"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/txtdashboard"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:text="12 Items"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="14sp" />-->
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/profile" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/recycler_bg"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:layout_weight="1"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:rowCount="3">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="60dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="bellyfat"
+                        android:orientation="vertical"
+                        android:padding="1dp">
+
+                        <!-- Media -->
+                        <ImageView
+                            android:id="@+id/fatimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="194dp"
+                            android:transitionName="example_transiton"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/bodyy" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAllCaps="true"
+                                android:text="Loose belly fat"
+                                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:textAllCaps="true"
+
+                                android:text="beginner"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary" />
+
+                            <!--                        <TextView-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:layout_marginTop="16dp"-->
+                            <!--                            android:text="This is the supporting text"-->
+                            <!--                            android:textColor="?android:attr/textColorSecondary" />-->
+
+                        </LinearLayout>
+                        <!-- Buttons -->
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_margin="8dp"-->
+
+                        <!--                        android:orientation="horizontal">-->
+
+                        <!--                        <com.google.android.material.button.MaterialButton-->
+                        <!--                            style="?attr/borderlessButtonStyle"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginEnd="8dp"-->
+                        <!--                            android:text="Okay" />-->
+
+                        <!--                        <com.google.android.material.button.MaterialButton-->
+                        <!--                            style="?attr/borderlessButtonStyle"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:text="Cancel" />-->
+                        <!--                    </LinearLayout>-->
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/caredd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="20dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="hardabs"
+                        android:orientation="vertical"
+                        android:padding="1dp">
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="194dp"
+                            android:id="@+id/absimage"
+                            android:transitionName="example_transiton"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/bodyyyyyyyyy" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="rock hard abs"
+                                android:textAllCaps="true"
+                                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="intermediate"
+                                android:textAllCaps="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary" />
+
+                            <!--                        <TextView-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:layout_marginTop="16dp"-->
+                            <!--                            android:text="This is the supporting text"-->
+                            <!--                            android:textColor="?android:attr/textColorSecondary" />-->
+
+                        </LinearLayout>
+                        <!-- Buttons -->
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_margin="8dp"-->
+
+                        <!--                        android:orientation="horizontal">-->
+
+                        <!--                        <com.google.android.material.button.MaterialButton-->
+                        <!--                            style="?attr/borderlessButtonStyle"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginEnd="8dp"-->
+                        <!--                            android:text="Okay" />-->
+
+                        <!--                        <com.google.android.material.button.MaterialButton-->
+                        <!--                            style="?attr/borderlessButtonStyle"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:text="Cancel" />-->
+                        <!--                    </LinearLayout>-->
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardtd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="20dp"
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="20dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:onClick="packabs"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="1dp">
+
+                        <!-- Media -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="194dp"
+                            android:id="@+id/siximage"
+                            android:transitionName="example_transiton"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/bodyyyyyyy" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Title, secondary and supporting text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="six pack abs"
+                                android:textAllCaps="true"
+                                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="advanced"
+                                android:textAllCaps="true"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary" />
+
+                            <!--                        <TextView-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:layout_marginTop="16dp"-->
+                            <!--                            android:text="This is the supporting text"-->
+                            <!--                            android:textColor="?android:attr/textColorSecondary" />-->
+
+                        </LinearLayout>
+                        <!-- Buttons -->
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_margin="8dp"-->
+
+                        <!--                        android:orientation="horizontal">-->
+
+                        <!--                        <com.google.android.material.button.MaterialButton-->
+                        <!--                            style="?attr/borderlessButtonStyle"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginEnd="8dp"-->
+                        <!--                            android:text="Okay" />-->
+
+                        <!--                        <com.google.android.material.button.MaterialButton-->
+                        <!--                            style="?attr/borderlessButtonStyle"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:text="Cancel" />-->
+                        <!--                    </LinearLayout>-->
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

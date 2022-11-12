@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gym">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splash1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/splash1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gym">
+        <activity android:name=".Exercise_Area"></activity>
+        <activity android:name=".UserExercise_Details" />
+        <activity android:name=".UserExercise" />
+        <activity android:name=".payment" />
+        <activity android:name=".exercisedetails" />
+        <activity android:name=".creatingprofile" />
+        <activity android:name=".RegChoice" />
+        <activity android:name=".RegExercise" />
+        <activity android:name=".RegGender" />
+        <activity android:name=".exercise" />
+        <activity android:name=".SelectedUser" />
+        <activity
+            android:name=".Customers_list"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".profile" />
+        <activity android:name=".bmi" />
+        <activity android:name=".register" />
+        <activity android:name=".login" />
+        <activity android:name=".UserDashboard" />
+    </application>
+
+</manifest>

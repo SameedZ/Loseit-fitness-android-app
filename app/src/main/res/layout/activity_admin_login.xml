@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="40dp">
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/roboto_light"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:text="Your Profile"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="24dp"></TextView>-->
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:onClick="backtologin"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_back_black">
+
+        </ImageView>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:src="@drawable/splash1"/>
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Login"-->
+    <!--        android:fontFamily="@font/roboto_bold"-->
+    <!--        android:textColor="#000"-->
+    <!--        android:textSize="35dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:letterSpacing="0.03"/>-->
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:background="@drawable/forget"
+        android:hint="Enter pin"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        android:inputType="number"
+        android:id="@+id/pinnum"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"/>
+
+<!--    <EditText-->
+<!--        android:layout_width="260dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:background="@drawable/forget"-->
+<!--        android:hint="Password"-->
+<!--        android:fontFamily="@font/roboto_light"-->
+<!--        android:textColor="#000"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:textStyle="bold"-->
+<!--        android:id="@+id/lpassword"-->
+<!--        android:textSize="18dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:paddingLeft="20dp"/>-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Forget Password?"-->
+    <!--        android:textColor="#000"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:textSize="18dp"-->
+    <!--        android:fontFamily="@font/roboto_light"-->
+    <!--        android:layout_gravity="end"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginRight="35dp"/>-->
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:text="check pin"
+        android:textSize="18dp"
+        android:id="@+id/admincheck"
+        android:fontFamily="@font/roboto_bold"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"/>
+
+<!--    <Button-->
+<!--        android:layout_width="260dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@drawable/forget"-->
+<!--        android:text="validate pin"-->
+<!--        android:textSize="18dp"-->
+<!--        android:id="@+id/adminback"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#fff"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Don't have an account? Sign Up"-->
+<!--        android:textColor="#000"-->
+<!--        android:textStyle="normal"-->
+<!--        android:textSize="18dp"-->
+<!--        android:fontFamily="@font/roboto_light"-->
+<!--        android:onClick="toregister"-->
+<!--        android:layout_marginTop="15dp"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; OR -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--        android:textColor="#000"-->
+<!--        android:textStyle="normal"-->
+<!--        android:textSize="18dp"-->
+<!--        android:fontFamily="@font/roboto_light"-->
+<!--        android:onClick="toregister"-->
+<!--        android:layout_marginTop="15dp"/>-->
+<!--    <Button-->
+<!--        android:layout_width="260dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@drawable/button"-->
+<!--        android:text="Sign In AS admin"-->
+<!--        android:textSize="18dp"-->
+<!--        android:id="@+id/adminlogin"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#FFF"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/adminloginavi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        app:indicatorName="BallPulseIndicator"
+        app:indicatorColor="@color/black"
+        />
+
+</LinearLayout>

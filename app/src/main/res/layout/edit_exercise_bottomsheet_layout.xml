@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/recycler_bg"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/black"
+        android:id="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/exercisenamedisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=""
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:hint="Exercise name"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_light"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:paddingEnd="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"/>
+
+        <EditText
+            android:id="@+id/editduration"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:hint="Exercise duration"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_light"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"/>
+
+        <EditText
+            android:id="@+id/editdesc"
+            android:layout_width="260dp"
+            android:layout_height="95dp"
+            android:background="@drawable/forget"
+            android:textAlignment="inherit"
+            android:hint="Exercise description..."
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_light"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:paddingEnd="10dp"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"/>
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/button"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="update"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/button_red"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editdelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="delete"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avieditexercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/desc"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"
+            app:indicatorColor="@color/black"
+            app:indicatorName="BallPulseIndicator" />
+
+    </LinearLayout>
+
+</RelativeLayout>

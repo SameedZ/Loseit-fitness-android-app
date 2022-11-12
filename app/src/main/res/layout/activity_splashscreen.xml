@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".splashscreen">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/images"
+           android:layout_width="450dp"
+           android:layout_height="350dp"
+           android:paddingBottom="20dp"
+           android:src="@drawable/splash1" />
+
+       <com.wang.avi.AVLoadingIndicatorView
+           android:id="@+id/avisplash"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/images"
+           android:layout_centerInParent="true"
+           android:layout_marginTop="15dp"
+           android:visibility="gone"
+           app:indicatorColor="@color/black"
+           app:indicatorName="BallPulseIndicator" />
+
+   </RelativeLayout>
+
+</LinearLayout>

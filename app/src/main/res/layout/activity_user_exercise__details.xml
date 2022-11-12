@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/laview"
+    android:weightSum="9"
+    android:background="@drawable/user_list_bg"
+    tools:context=".UserExercise_Details">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/cordlayout"
+        android:transitionName="example_transiton"
+        android:paddingTop="5dp"
+        android:layout_weight="3">
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:theme="@style/ToolBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?actionBarSize">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="28dp"-->
+<!--                android:layout_height="28dp"-->
+<!--                android:onClick="todashboard"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:src="@drawable/ic_baseline_arrow_back_24">-->
+
+<!--            </ImageView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/exercisedisplay"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text=""-->
+<!--                android:textAllCaps="true"-->
+<!--                android:fontFamily="@font/roboto_regular"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="22dp" />-->
+<!--        </androidx.appcompat.widget.Toolbar>-->
+
+        <TextView
+            android:id="@+id/userexercisedisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textAllCaps="true"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="184dp">
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/icon_ar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_baseline_library_music_24">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_toRightOf="@id/icon_ar"
+                android:text="Sound &amp; Music"
+                android:textColor="#fff"
+                android:textSize="18dp"></TextView>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_white">
+
+            </ImageView>
+        </RelativeLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/recycler_bg">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rcvuserexercise"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/etndfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="16dp"
+            app:iconTint="@color/white"
+            android:text="START EXERCISE"
+            android:textColor="@color/white"
+            android:contentDescription="description"
+            app:icon="@drawable/ic_baseline_directions_run_24"/>
+<!--                </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>

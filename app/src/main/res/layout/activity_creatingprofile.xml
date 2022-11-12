@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".creatingprofile">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/profileavi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone"
+        app:indicatorName="LineScalePulseOutRapidIndicator"
+        app:indicatorColor="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:text="creating your profile..."
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_light"/>
+
+
+</LinearLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".RegExercise">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Step 3/3"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        android:text="How often do you exercise?"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:onClick="beginner"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/forget">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="beginner"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/sleep" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:onClick="beginner"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/profile"
+                android:fontFamily="@font/roboto_bold"
+                android:text="beginner"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/useame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/username"
+                android:layout_marginTop="8dp"
+                android:onClick="beginner"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/profile"
+                android:fontFamily="@font/roboto_light"
+                android:text="Once a week"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/beginnercheck"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/check"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:onClick="inter"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/forget">
+
+            <ImageView
+                android:id="@+id/prfile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="inter"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/walking" />
+
+            <TextView
+                android:id="@+id/usrname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:onClick="inter"
+                android:layout_toEndOf="@+id/prfile"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Intermediate"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/usesame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/usrname"
+                android:layout_marginTop="8dp"
+                android:onClick="inter"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/prfile"
+                android:fontFamily="@font/roboto_light"
+                android:text="2-3 times a week"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/intercheck"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/check"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:onClick="advanced"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/forget">
+
+            <ImageView
+                android:id="@+id/prile"
+                android:layout_width="30dp"
+                android:onClick="advanced"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/treadmill" />
+
+            <TextView
+                android:id="@+id/usname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:onClick="advanced"
+                android:layout_toEndOf="@+id/prile"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Advanced"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ueame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/usname"
+                android:layout_marginTop="8dp"
+                android:onClick="advanced"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/prile"
+                android:fontFamily="@font/roboto_light"
+                android:text="Over 4 times a week"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/advancecheck"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/check"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button"
+        android:text="Done"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_marginTop="30dp"/>
+
+
+
+</LinearLayout>

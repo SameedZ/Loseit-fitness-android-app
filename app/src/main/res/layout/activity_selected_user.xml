@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/selectedview"
+    android:layout_height="match_parent"
+    tools:context=".SelectedUser">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/black"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:onClick="dashboard"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Selected Customer"
+            android:textSize="18dp"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/selectdusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="38dp"
+            android:layout_toRightOf="@+id/profile"
+            android:fontFamily="@font/roboto_bold"
+            android:text="shoes"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+<!--        <View-->
+<!--            android:id="@+id/firstview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_below="@id/profile"-->
+<!--            android:background="@color/white" />-->
+
+
+        <RelativeLayout
+            android:id="@+id/emaillayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectdusername"
+            android:layout_marginTop="54dp">
+
+
+            <TextView
+                android:id="@+id/icon_ar"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="19dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/semail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/icon_ar"
+                android:text="Calculate BMI"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phonelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emaillayout"
+            android:layout_marginTop="14dp">
+
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:textSize="19dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/sphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/one"
+                android:text="000000000"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/agelayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/phonelayout"-->
+<!--            android:layout_marginTop="14dp">-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/age"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Age:"-->
+<!--                android:textSize="19dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginLeft="20dp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/sage"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="3dp"-->
+<!--                android:layout_toRightOf="@id/age"-->
+<!--                android:text="00"-->
+<!--                android:textStyle="italic"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20dp" />-->
+
+<!--        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/genderlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phonelayout"
+            android:layout_marginTop="14dp">
+
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textSize="19dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/sgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/gender"
+                android:text="male"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bmilayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genderlayout"
+            android:layout_marginTop="14dp">
+
+
+            <TextView
+                android:id="@+id/bmi"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="BMI:"
+                android:textSize="19dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/sbmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/bmi"
+                android:text="0.4kg"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/secondview"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_below="@id/bmilayout"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/paymenthistoryy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondview"
+            android:text="Payment History"
+            android:textSize="19dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"/>
+
+        <View
+            android:id="@+id/sondview"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/paymenthistoryy"
+            android:background="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@id/sondview"
+            android:layout_height="match_parent"
+            android:id="@+id/rcvpayhistory"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="3dp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
