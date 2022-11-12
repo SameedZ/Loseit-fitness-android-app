@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/contnt"
+    android:padding="24dp"
+    tools:context=".profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/goals_and_targets"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:onClick="dashboard"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_back_black">
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg">
+
+        <TextView
+            android:id="@+id/bannerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/set_your_goals"
+            android:textColor="#ffff"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/noOfSteps"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:hint="@string/steps_target"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/hrsOfSleep"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:hint="@string/hours_of_sleep"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/caloriesLimit"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:hint="@string/calories_burn_count"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/weightTarget"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:hint="@string/target_weight"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button"
+            android:text="@string/set_target"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_marginTop="15dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/proavi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:indicatorName="BallPulseIndicator"
+            app:indicatorColor="@color/black"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

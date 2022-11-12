@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Gym</string>
+    <string name="set_your_goals">Set your goals</string>
+    <string name="steps_target">Steps target</string>
+    <string name="hours_of_sleep">Hours of sleep</string>
+    <string name="calories_burn_count">Calories burn count</string>
+    <string name="target_weight">Target weight</string>
+    <string name="goals_and_targets">Goals and Targets</string>
+    <string name="set_target">Set Target</string>
 </resources>

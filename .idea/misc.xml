@@ -3,6 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_exercise.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_exercise__area.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_exercisedetails.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_login.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_payment.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_profile.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_reg_choice.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_reg_exercise.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_reg_gender.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_register.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_selected_user.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_set_goals.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_user_exercise.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_user_exercise__details.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/activity_userdashboard.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/add_exercise_dialog.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/exercise_list_layout.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/payment_history_list_layout.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/userpayment_adapter_layout.xml" value="0.225" />
+        <entry key="..\:/University/Final Semester/SMD/Project/phase-1/Loseit-fitness-android-app/app/src/main/res/layout/users_list_layout.xml" value="0.225" />
         <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/drawable/button.xml" value="0.184" />
         <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/Sameed Zahoor/AndroidStudioProjects/SMD_Project/GymApp-master/app/src/main/res/layout/activity_admin_login.xml" value="0.17760416666666667" />
@@ -30,7 +50,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

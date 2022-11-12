@@ -11,7 +11,10 @@
         android:roundIcon="@drawable/splash1"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gym">
-        <activity android:name=".Exercise_Area"></activity>
+        <activity
+            android:name=".Set_Goals"
+            android:exported="false" />
+        <activity android:name=".Exercise_Area" />
         <activity android:name=".UserExercise_Details" />
         <activity android:name=".UserExercise" />
         <activity android:name=".payment" />
